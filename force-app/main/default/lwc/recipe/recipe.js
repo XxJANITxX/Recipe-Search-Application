@@ -1,5 +1,5 @@
 import { LightningElement, api } from "lwc";
-import getRecipe from "@salesforce/apex/Spoonacular.getRecipe";
+import getRecipe from "@salesforce/apex/Sponacular_Class.getRecipe";
 
 export default class Receipe extends LightningElement {
   @api image;
