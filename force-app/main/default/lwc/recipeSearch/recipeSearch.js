@@ -1,6 +1,6 @@
 import { LightningElement } from "lwc";
-import getRandomRecipe from "@salesforce/apex/Sponacular_Class.getRandomRecipe";
-import getRecipeByIngredients from "@salesforce/apex/Sponacular_Class.getRecipeByIngredients";
+import getRandomRecipe from "@salesforce/apex/Sponacular_Class.getRandomRecipes";
+import getRecipeByIngredients from "@salesforce/apex/Sponacular_Class.getRecipeByIngredient";
 
 export default class RecipeSearch extends LightningElement {
   recipes = [];
