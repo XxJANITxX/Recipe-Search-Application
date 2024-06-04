@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<!--<h1>Hello World</h1>-->
+    
+    <p class="paragraph">This is a paragraph</p>
+    
+    <div>
+        <p class="paragraph1">This is our first lighting component
+    	For more information, please mail the manager.</p>
+    </div>
+    	
+    <div>
+        <div>
+        	<p class="paragraph2">This is our first lighting component
+    		For more information, please mail the manager.</p>
+        </div>
+    </div>
+    
+    <div>
+    	<lightning:formattedText value="Hello world using lightning component"/>
+    </div>
+    
+    <div>
+        <lightning:formattedText linkify="true" value="I like salesforce.com and trailhead.salesforce.com." />
+    </div>
+    
+    <div>
+    	<button>HTML Button</button>
+    </div>
+    <div>
+    	<lightning:button variant="brand" label="Test Button" title="Brand action" onclick="{! c.handleClick }"/>
+    </div>
+</aura:component>

@@ -1,3 +1,5 @@
+// This class is regarding fetching data from spoonacular api
+
 public with sharing class Sponacular_Class {
     private static final string SPONACULAR_API = 'https://api.spoonacular.com';
     private static final string API_KEY = '2097a1960ad64ea8ad321e3a8d317690';

@@ -1,3 +1,5 @@
+// This is a restful resource api regarding fetching data for opportunity
+
 @RestResource(urlMapping = '/Opportunities/*')
 global with sharing class OpportunityManager {
     
