@@ -30,7 +30,7 @@ export default class WireDemo extends LightningElement {
     }
     */
 
-    // Importing through objects ( Video 8)
+    // Importing through objects - using fields through strings ( Video 8)
     @wire(getRecord, {recordId: '$recordId', fields:['Account.Name', 'Account.Phone']})
     record;
 
@@ -43,7 +43,7 @@ export default class WireDemo extends LightningElement {
     }
     
     get phone(){
-        
+
         // return this.record.data.field.Phone.value;
         return this.record.data ? getFieldValue(this.record.data, 'Account.Phone'): '';
     }
