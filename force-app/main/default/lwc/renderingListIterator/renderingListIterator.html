@@ -1,0 +1,15 @@
+<template>
+
+    <!-- In iterator, the elements gets stored in 'it' -->
+    <lightning-card title="Rendering list using Iterator video 20">
+        <ul class="slds-m-around_medium">
+            <template iterator:it = {contacts}>
+                <li key={it.value.id}>
+                    <div if:true={it.first} class="list-first"></div>
+                    {it.value.FirstName}, {it.value.LastName}
+                    <div if:true={it.last} class="list-last"></div>
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>
