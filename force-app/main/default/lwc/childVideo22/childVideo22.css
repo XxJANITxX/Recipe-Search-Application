@@ -1,0 +1,21 @@
+/* Child component css cannot get affected by parent component css 
+and can have its own css */
+
+/* However, if you want to specify the child component css in 
+parent component css, you have to put the child component name in it as shown in parent component css */
+
+/* Css present in parent is more dominant then the one in the child */
+:host{
+    display: block;
+    background-color: yellow;
+}
+
+/* Child component css must be decalred here only */
+h1{
+    color:blueviolet;
+    font-size: xx-large;
+}
+
+:host(.active){
+    background-color: grey;
+}

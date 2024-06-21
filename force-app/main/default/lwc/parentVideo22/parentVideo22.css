@@ -1,0 +1,22 @@
+/* Video 22nd CSS Style Sheet */
+h1 {
+    font-size:xx-large;
+    color: red;
+}
+
+.first{
+    color: blue;
+    padding: 5px;
+    text-align: right;
+}
+
+.second{
+    color: yellowgreen;
+    text-align: center;
+}
+
+/* This is the child component css created in parent component, 
+it will always have precedence over the  css created in child component*/
+c-child-video-22{
+    background-color: green;
+}
