@@ -7,6 +7,7 @@ export default class RenderingListIterator extends LightningElement {
     contacts;
     error;
 
+    // Fetching data from getContacts function and displaying it on  a record page
     @wire(getContacts, {accId:'$recordId'})
     contacts({data, error}){
         if(data){
