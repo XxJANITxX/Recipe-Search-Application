@@ -1,0 +1,36 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-top_medium slds-m-bottom_x-large">
+            <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                Enter your information
+            </h2>
+    
+            <!-- Default/basic -->
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter First Name" data-id="firstName" onchange={handleCFN}></lightning-input>
+            </div>
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter Last Name" data-id="lastName" onchange={handleCLN}></lightning-input>
+            </div>
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="Enter Email" data-id="email" onchange={handleE}></lightning-input>
+            </div>
+        </div>
+
+        <div>
+            First Name : {firstName}
+            Last Name : {lastName}
+            Email : {email}
+        </div>
+        <div>
+            First Name : {studentData.fn}
+            Last Name : {studentData.ln}
+            Email : {studentData.email}
+        </div>
+        <div>
+            First Name : {reactiveStudentData.fn}
+            Last Name : {reactiveStudentData.ln}
+            Email : {reactiveStudentData.email}
+        </div>
+    </lightning-card>
+</template>
