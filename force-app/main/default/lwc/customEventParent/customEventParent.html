@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+       <c-custom-event-child onsend={storeMessage}></c-custom-event-child>
+    </lightning-card>
+
+    <lightning-card title="Latest Message from Child">
+        <p>{latestMessage}</p>
+    </lightning-card>
+</template>
