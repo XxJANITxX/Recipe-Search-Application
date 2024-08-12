@@ -6,5 +6,10 @@ export default class ParentComponentApi extends LightningElement {
     
     handleChange(event){
         this.parentInput = event.target.value;
+        this.emptyChildProperty();
+    }
+
+    emptyChildProperty(){
+        this.template.querySelector('c-child-component-api').childMethod();
     }
 }
