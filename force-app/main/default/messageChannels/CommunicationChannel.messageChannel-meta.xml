@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageChannel xmlns="http://soap.force.com/2006/04/metadata">
+    <description>Channel for communication between Component A and Component B</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Communication Channel</masterLabel>
+</MessageChannel>
