@@ -3,13 +3,26 @@ public with sharing class SoqlQueries {
     // To fetch data based on single string
     public static List<Account> fetchString(String s){
         return [Select Fields(Standard) from Account where Name = :s limit 200];
+
+        // Here, we are returing a list of accounts where Name is equal to the passed string
+        // We are fetching all the standard fields available in the account object
+        // We are limiting the fecthed data to 200 records
+        // Note - This will return only the data which is available in the database
+        // If we pass a string which is not present in the database, it will not return any data
     }
     
     // Fetching data based on the names present in a list (Using 'in' and 'not in' keywords)
     public static void fetchDataCompareList(){
+        // Here, we are fetching the data which is not present in the list passed
         List<String> brandNames = new List<String>{'Volkswagon', 'Genepoint'};
         List<Account> accounts = [Select Name, NumberOfEmployees from Account where Name Not in :brandNames];
         System.debug(accounts);
+
+        // We can pass the list of strings to in between single quotes
+        
+        // We can also fetch records which are present in the list using IN keyword
+        List<Account> accounts2 = [Select Name, NumberOfEmployees from Account where Name in :brandNames];
+        System.debug(accounts2);
     }
     
     // Fetching data using like keyword where data is present in different formats

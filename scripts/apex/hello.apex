@@ -53,3 +53,13 @@ if(response.getStatusCode() == 200){
         System.debug(childItems.get('statistics'));
     }
 }
+
+
+public static void fetchDataCompareList(){
+    List<String> brandNames = new List<String>{'Volkswagon', 'Genepoint'};
+    List<Account> accounts = [Select Name, NumberOfEmployees from Account where Name Not in :brandNames];
+    System.debug(accounts);
+
+    List<Account> accounts2 = [Select Name, NumberOfEmployees from Account where Name in :brandNames];
+    System.debug(accounts2);
+}
